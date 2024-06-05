@@ -31,7 +31,8 @@ blocks:
           - go mod vendor
       jobs:
         - name: Unit tests
-          commands: []
+          commands:
+            - go test ./...
   - name: Build
     task:
       prologue:
